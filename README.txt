@@ -32,3 +32,13 @@ Projenin amacı güvenlik kameraları veya canlı görüntülerden alınan park 
 ```bash
 # Gerekli kütüphaneleri yükleyin
 pip install opencv-python numpy
+
+---
+
+## Katkı yapanlar
+-Deniz Demirbaş - 2405902011 - Yapay Zeka Operatörlüğü
+
+---
+
+## iş Bölümü
+-Deniz Demirbaş:[her şey]
