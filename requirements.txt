@@ -1,0 +1,35 @@
+## Gerekli Kütüphaneler
+
+---
+
+-pip install opencv-python
+-pip install numpy
+
+---
+
+-Kütüphane				Açıklama
+
+-opencv-python		Görüntü işleme ve video/görsel üzerinden kutu çizimi, Haar Cascade vb.
+
+-numpy			Dizi işlemleri, görüntü verisiyle çalışma
+
+---
+
+## Eğer GUI (arayüz) kullanıyorsan:
+
+---
+
+-pip install tk
+
+###  Eğer QR kod üretimi veya görsel oluşturma gerekiyorsa (opsiyonel):
+
+---
+
+-pip install qrcode[pil]
+-pip install pillow
+
+---
+
+-import cv2
+-import numpy as np
+
