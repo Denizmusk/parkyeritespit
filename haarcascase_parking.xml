@@ -1,0 +1,16 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun May 25 18:20:05 2025
+
+@author: demir
+"""
+
+# parking_detect.py içinde
+car_cascade = cv2.CascadeClassifier('cars.xml')  # veya haarcascade_parking.xml
+
+gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+cars = car_cascade.detectMultiScale(gray, 1.1, 2)
+
+for (x, y, w, h) in cars:
+    cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
+    cv2.putText(frame, 'Araç', (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
